@@ -29,19 +29,22 @@ ScrollReveal().reveal(".slide-heading, .btn-contain, .service-head, .banner-mark
     opacity: 0,
 });
 
-ScrollReveal().reveal(".about-title, .slide-desc, .partner-contain, .footer-right", {
+ScrollReveal().reveal(".about-title, .slide-desc, .partner-contain, .footer-right, .banner-heading", {
     delay: 200,
     easing: "cubic-bezier(1, 1, 0.9, 1)",
     origin: "right",
     opacity: 0,
 });
 
-ScrollReveal().reveal(".abtract-container, .about-mark, .banner-right-inner, .contact-body, .contact-head-heading", {
-    delay: 200,
-    easing: "cubic-bezier(1, 1, 0.9, 1)",
-    origin: "bottom",
-    opacity: 0,
-});
+ScrollReveal().reveal(
+    ".abtract-container, .about-mark, .banner-right-inner, .contact-body, .contact-head-heading, .banner-item",
+    {
+        delay: 200,
+        easing: "cubic-bezier(1, 1, 0.9, 1)",
+        origin: "bottom",
+        opacity: 0,
+    }
+);
 
 // capchar
 
@@ -118,3 +121,6 @@ window.addEventListener("load", vanish);
 function vanish() {
     loader.classList.add("disappear");
 }
+
+//counter number
+$(".counter").countUp();

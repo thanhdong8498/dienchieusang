@@ -99,3 +99,6 @@ window.addEventListener("load", vanish);
 function vanish() {
     loader.classList.add("disappear");
 }
+
+//counter number
+$(".counter").countUp();

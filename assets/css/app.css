@@ -13,7 +13,7 @@ body,
 html {
   width: 100%;
   height: 100vh;
-  font-family: "Roboto", sans-serif;
+  font-family: "Bai Jamjuree", Arial;
   scroll-behavior: smooth;
 }
 
@@ -145,7 +145,7 @@ header {
 
 .slide-inner h3 {
   font-size: 58px;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: normal;
   color: var(--white-color);
   line-height: 69.6px;
@@ -187,6 +187,7 @@ header {
 }
 
 .abtract-item {
+  min-height: 393px;
   position: relative;
   text-align: center;
   top: -60px;
@@ -217,6 +218,7 @@ header {
 }
 
 .abtract-item--color {
+  min-height: 393px;
   background-color: var(--primary-color);
   position: relative;
   text-align: center;
@@ -268,6 +270,7 @@ header {
 }
 
 .abtract-item--color button {
+  cursor: pointer;
   color: var(--primary-color);
   background-color: var(--white-color);
   margin: 34px 0 2px;
@@ -322,7 +325,15 @@ header {
   margin-right: 3px;
 }
 
-.mark-header,
+.mark-header {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27.2px;
+  color: var(--white-color);
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
 .mark-description {
   font-size: 16px;
   font-weight: 500;
@@ -392,7 +403,7 @@ header {
   color: rgb(14, 44, 75);
   line-height: 27.2px;
   font-style: italic;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .ambiton p {
@@ -474,6 +485,7 @@ header {
 }
 
 .service-item {
+  min-height: 408px;
   text-align: center;
   padding: 40px;
   box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 10%);
@@ -529,7 +541,7 @@ header {
 .service-last-item {
   background-image: url(../../assets/img/teamwork.jpg);
   width: 100%;
-  height: 350.5px;
+  height: 408px;
   margin-bottom: 24px;
   background-size: cover;
   background-position: center center;
@@ -544,84 +556,55 @@ header {
   opacity: 0.29;
 }
 
+/* banner */
+
 .banner {
-  height: 445px;
   display: flex;
-  margin: 80px 0;
+  margin: 0px 0 80px 0;
+  overflow: hidden;
 }
 
-.banner-left {
-  position: relative;
-  width: 50%;
-  height: 100%;
-  background-image: url(../../assets/img/banner.jpg);
-  background-size: cover;
-}
-
-.banner-right {
-  position: relative;
-  width: 50%;
-  height: 100%;
-
-  background-size: cover;
-  background-color: var(--primary-color);
-}
-
-.banner-right::after {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  content: "";
-  background-image: url(../../assets/img/worldmap.png);
-  background-size: cover;
-  opacity: 0.5;
-}
-
-.banner-mark {
-  padding: 30px;
-  width: 281px;
-  background-color: var(--primary-color);
-  position: absolute;
-  bottom: 0;
-}
-
-.banner-mark p {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 27.2px;
-  color: var(--white-color);
-  text-align: justify;
-}
-
-.banner-right {
+.banner-inner {
   display: flex;
   justify-content: center;
+  border-top: solid 1px var(--primary-color);
+  padding-top: 40px;
 }
 
-.banner-right-inner {
-  z-index: 1;
+.banner .banner-heading {
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.banner-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  font-size: 72px;
 }
 
-.banner-right h5 {
-  color: var(--white-color);
+.banner-item-heading {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 36px;
+  color: #000080;
 }
 
-.banner-right-icon {
-  color: var(--white-color);
-  margin-left: 12px;
+.number {
+  display: flex;
 }
 
-.banner-overlay {
-  background-color: rgba(0, 0, 0, 0.25);
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
+.number-count {
+  font-size: 20px;
 }
 
+.number-count span {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: var(--primary-color);
+}
 
 .contact-head {
   background: url(../../assets/img/dochieubarnve.jpg);
@@ -905,7 +888,7 @@ header {
 
 footer {
   width: 100%;
-  background-color: rgb(54, 26, 16);
+  background-color: rgb(23, 3, 70);
   text-align: center;
   overflow: hidden;
 }
@@ -923,7 +906,7 @@ footer .sub-heading {
 }
 
 footer .slogan {
-  color: rgb(20, 219, 47);
+  color: var(--primary-color);
   line-height: 40px;
   font-size: 20px;
   letter-spacing: .7px;
@@ -952,6 +935,7 @@ footer .footer-bottom {
 
 footer .footer-logo {
   height: 100px;
+  margin-bottom: 22px;
 }
 
 .social-media-icons {
@@ -987,7 +971,7 @@ footer .footer-logo {
   padding: 16px 50px;
   font-size: 16px;
   font-weight: 300;
-  color: #747474;
+  color: #e6e3e3;
 }
 
 .footer-right {
@@ -1196,7 +1180,7 @@ footer .footer-logo {
 }
 
 .disappear {
-  animation: vanish 1.35s forwards;
+  animation: vanish 2.35s forwards;
 }
 
 
