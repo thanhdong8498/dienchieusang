@@ -1,0 +1,151 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .show-on-mobile-tablet {
+        display: block;
+    }
+
+    .mobile-tablet-header-nav-items:hover .mobile-tablet-header-nav-link {
+        cursor: pointer;
+        color: var(--primary-color);
+    }
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .abtract-inner {
+        padding: 0 12px;
+    }
+
+    .contact-head-heading {
+        font-size: 30px;
+    }
+
+    .contact-head-inner {
+        top: -340px;
+    }
+
+    .about-inner {
+        padding-bottom: 84px;
+    }
+
+    .footer-right-item {
+        justify-content: center;
+        margin-left: unset;
+    }
+
+    .service-inner {
+        width: 100%;
+        padding: 0 12px;
+    }
+
+    .service-last-item {
+        height: 323.5px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .banner-left {
+        height: 394px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .banner-right {
+        width: 100%;
+        height: 394px;
+    }
+
+    .banner {
+        flex-direction: column;
+        height: unset;
+    }
+
+    .abtract-inner {
+        overflow: hidden;
+        padding: 0 12px;
+    }
+
+    .row {
+        margin-right: 0;
+    }
+
+    .slide-inner h3 {
+        font-size: 38px;
+        line-height: unset;
+    }
+
+    .slide-inner {
+        padding-left: 20px;
+    }
+
+    .service-inner {
+        padding: 0 12px;
+    }
+
+    .contact-head-heading {
+        font-size: 24px;
+        line-height: unset;
+        padding: 0 12px;
+    }
+
+    .contact-left {
+        margin: 0 12px;
+    }
+
+    .btn-contact-left {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .contact-gate a {
+        display: none;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 26px;
+    }
+
+    .form-group.name,
+    .form-group.email {
+        margin-right: unset;
+    }
+
+    .partner-contain {
+        margin: 0px 12px 40px;
+    }
+
+    .col {
+        padding-right: unset;
+    }
+
+    .footer-right-item {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    footer .footer-bottom {
+        font-size: 14px;
+    }
+
+    .about-mark {
+        top: -90%;
+    }
+}
